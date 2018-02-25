@@ -20,7 +20,7 @@ To test the script before running the update set
 
 `Boolean runUpdate = false;`
 
-The system.asset statement will prevent the Apex from running
+The system.assert statement will prevent the Apex from running
 on unexpected contact records
 
 `System.assertEquals(contactsSize, contacts.size(), 'Not The Right Number');`
