@@ -44,19 +44,19 @@ if(contactsSize > 0) {
 
 System.assertEquals(contactsSize, contacts.size(), 'Not The Right Number');
 
-    List<Contact> contactsToUpdate = new List<Contact> ();
+  List<Contact> contactsToUpdate = new List<Contact> ();
 
-    for (Contact c : contacts) {
-      c.Allow_Access_Backstage__c = allowAccessNew;
-      contactsToUpdate.add(c);
-      System.debug(
-          'Contact: ' + contactsToUpdate.size() +
-          ' Employee: ' + c.Employee_Number__c +
-          ' ' + c.Name
-      );
-    }
+  for (Contact c : contacts) {
+    c.Allow_Access_Backstage__c = allowAccessNew;
+    contactsToUpdate.add(c);
+    System.debug(
+        'Contact: ' + contactsToUpdate.size() +
+        ' Employee: ' + c.Employee_Number__c +
+        ' ' + c.Name
+    );
+  }
 
-    if(runUpdate) {
-      update contactsToUpdate;
-    }
+  if(runUpdate) {
+    update contactsToUpdate;
+  }
 }
