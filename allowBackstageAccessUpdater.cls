@@ -10,7 +10,7 @@ Boolean allowAccessOld = false;
 Boolean allowAccessNew = true;
 Boolean runUpdate = true;
 
-List<Contact> testSize = new List<Contact>(
+List<Contact> testSize = new List<Contact> (
   [
     SELECT Id,
         Allow_Access_Backstage__c,
