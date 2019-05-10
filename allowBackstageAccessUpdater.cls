@@ -8,7 +8,10 @@
 
 Boolean allowAccessOld = false;
 Boolean allowAccessNew = true;
-Boolean runUpdate = true;
+Boolean runUpdate = false;
+
+//  Create function and call twice and compare
+// testContacts
 
 List<Contact> testSize = new List<Contact>(
   [
@@ -26,7 +29,7 @@ List<Contact> testSize = new List<Contact>(
 Integer contactsSize = testSize.size();
 
 System.assertNotEquals(0, contactsSize, 'Size = 0');
-
+// after assert OK if not needed
 if(contactsSize > 0) {
   List<Contact> contacts = new List<Contact> (
     [
